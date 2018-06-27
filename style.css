@@ -1,0 +1,119 @@
+/*Settings for better quality*/
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;  
+}
+
+h3{
+    flex-basis: 20;
+    box-sizing: border-box;
+    padding-left: 1em;
+}
+
+.example-text{
+    padding: 2em;
+    font-size: 150%;
+}
+
+footer{ text-align: center; }
+
+/*Design*/
+
+.hamburger-button{
+    position: absolute;
+    top:1em;
+    right:1em;
+}
+
+.hamburger-ingredient{
+    background-color: #a0a0a0;
+    border-radius: 1em;
+    height: .4em;
+    width: 2.5em;
+    margin: .2em;
+    transition: all .5s ease-in-out;
+}
+
+.hamburger-button{
+    transition-duration:.5s;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.hamburger-button:hover > .hamburger-ingredient{
+    background-color: #7e7e7e; 
+    filter: brightness(70%);
+}
+
+/*Transforms*/
+
+.to-bottom{ margin-top: .7em;  }
+
+.top-transform{ transform:  rotate(45deg); }
+
+.mid-transform{ transform: translateY(-.6em) rotate(-45deg) ; }
+
+.bottom-transform{ transform: translateY(-1.2em) rotate(-45deg) ; }
+
+/*Hamburger list*/
+
+.hamburger-menu{ width:100%; }
+
+ul.hamburger-list{
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width:100%;
+}
+
+ul.hamburger-list > .hamburger-item-list{
+    padding: .5em;
+    margin: .5em;
+    border-bottom: .1em solid #6f6f6f;
+}
+
+ul.hamburger-list > .hamburger-item-list > a{
+    text-decoration: none;
+    color:#000;
+    display: block;
+    transition-duration:.5s;
+}
+
+ul.hamburger-list > .hamburger-item-list > a:hover{
+    color: #484444;
+    font-weight: 700;
+    letter-spacing: .1em;
+    cursor: pointer;  
+}
+
+.no-display{
+    display: none;
+}
+
+/*Media Queries*/
+
+@media (min-width:640px){
+    
+    .hamburger-button{ display: none; }
+    
+    .hamburger-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .hamburger-item-list{
+        width:25%;
+        font-size:2em;
+    }
+    
+    .no-display{ display: block; }
+}
