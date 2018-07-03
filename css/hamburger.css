@@ -1,33 +1,4 @@
-/*Settings for better quality*/
-
-body{
-    margin: 0;
-    transition-duration: 1s;
-}
-
-.filter-b{ background: rgba(0, 0, 0, 0.7); }
-
-.container{
-    display: flex;
-    position: relative;
-    justify-content: flex-start;    
-}
-
-h3{
-    flex-basis: 20;
-    box-sizing: border-box;
-    padding-left: 1em;
-}
-
-.example-text{
-    padding: 2em;
-    font-size: 150%;
-}
-
-footer{ text-align: center; }
-
 /*Design*/
-
 .hamburger-button{
     position: absolute;
     top:1em;
@@ -37,7 +8,9 @@ footer{ text-align: center; }
     cursor: pointer;
 }
 
+/*classes for JS*/
 .p-fixed{ position: fixed; }
+.filter-b{ background: rgba(0, 0, 0, 0.7); }
 
 .hamburger-ingredient{
     background-color: #989797;
