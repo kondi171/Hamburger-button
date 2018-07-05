@@ -1,18 +1,8 @@
+*{box-sizing: border-box;}
+
 body{
     margin: 0;
     transition-duration: 1s;
-}
-
-.flex-parent{
-    display: flex;
-    position: relative;
-    justify-content: flex-start;    
-}
-
-h3{
-    flex-basis: 20;
-    box-sizing: border-box;
-    padding-left: 1em;
 }
 
 .example-text{
@@ -21,3 +11,4 @@ h3{
 }
 
 footer{ text-align: center; }
+.line{border: .5px solid rgba(0, 0, 0, 0.7);}
