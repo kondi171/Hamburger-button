@@ -1,4 +1,4 @@
-/*Design*/
+/*Design and position*/
 .hamburger-container{
     display:flex;
     position: relative;
@@ -22,10 +22,6 @@
     margin-right: auto;
 }
 
-/*classes for JS*/
-.p-fixed{ position: fixed; }
-.filter-b{ background: rgba(0, 0, 0, 0.7); }
-
 .hamburger-ingredient{
     background-color: #989797;
     border-radius: 1em;
@@ -40,16 +36,17 @@
     filter: brightness(70%);
 }
 
+/*Classes for JavaScript to animation*/
+.p-fixed{ position: fixed; }
+.transparent-overlay{ background: rgba(0, 0, 0, 0.7); }
+
 /*Transforms*/
 .to-bottom{transform: translateY(0.7em);}
 .top-transform{ transform: rotate(45deg); }
-
 .mid-transform{ transform: translateY(-.6em) rotate(-45deg) ; }
-
 .bottom-transform{ transform: translateY(-1.2em) rotate(-45deg) ; }
 
 /*Hamburger list*/
-
 .hamburger-menu{ 
     width: 100%;
     position: fixed;
@@ -93,7 +90,6 @@
 }
 
 /*Media Queries*/
-
 @media screen and (min-width:760px){
     
     .hamburger-menu{ position: static; }
